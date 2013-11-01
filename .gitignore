@@ -1,0 +1,9 @@
+*.swp
+
+*.pyc
+*.swo
+
+unity/Assets/.DS_Store
+
+.DS_Store
+/GITIGNORED sshots
