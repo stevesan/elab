@@ -130,11 +130,12 @@ public class MainController : MonoBehaviour
         {
             state = "win";
             outText.text = "Goal got! Time = "+runTime.ToString("0.00")+" seconds\nPress R to reset, B for level select";
+            Time.timeScale = 0f;
 
             if( runTime > GetBestTime( levels[activeLevelNum] ) )
             {
                 SetBestTime( levels[activeLevelNum], runTime );
-                outText.text += "NEW HIGH SCORE!";
+                outText.text = "NEW HIGH SCORE!\n" + outText.text;
             }
         }
     }

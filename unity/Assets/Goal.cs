@@ -14,7 +14,7 @@ public class Goal : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter( Collider col )
+    void OnCollisionEnter( Collision col )
     {
         if( Utility.FindAncestor<TheBall>(col.gameObject) != null )
         {
